@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Ubuntu+Condensed');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    background: whitesmoke;
+}
+.sections{
+    display: flex;
+}
+.nav-item {
+    font-size: 20px;
+font-weight: bold;
+}
+.section_img, .section_form {
+    width:50%;
+
+}
+label {
+    font-size: 18px;
+    padding-left: 5px;
+    color: black;
+}
+input{
+    outline: none;
+}
+.section_form {
+    display: flex;
+    flex-direction: column;
+    padding:10px 80px;
+    align-items: center;
+    margin-top: 40px;
+}
+.errorMsg{
+    font-size: 14px;
+    margin: 5px 50px 0;
+}
+.Msg{
+    font-size: 14px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.welcome-section {
+    background: red;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 150px 300px;
+}
+footer{
+    background-color:#28a745;
+    padding:10px 150px;
+    margin: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size:15px;
+    font-weight: bold;
+}
+.footer-contacts{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+.footer-contact-link{
+    padding:5px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+
+.footer-contact-link:hover{
+    background-color: transparent;
+}
+li{
+    list-style-type: none;
+
+}
+.fab{
+    margin:5px;
+}
+.footer-link-button {
+    text-decoration: none;
+    color:black;
+}
+.footer-link-button:hover{
+    color:lightgrey;
+}
+.footer-msg{
+    margin: 2px;
+}
+.ml-auto{
+    margin-right: 150px;
+    left: auto ;
+    right: 0px;
+}
+.ml {
+    margin-right: 20px;
+    font-weight: bold;
+}
+.role-link{
+
+}
+.role-link:hover{
+    color:whitesmoke;
+}
+.brand{
+    margin-left: 100px
+}
+input{
+    /*outline: none;*/
+}
+input:focus {
+   /*color: #bf152f;*/
+    /*border: 2px solid #bf152f;*/
+}
+.telInput{
+    padding: 0px;
+}
+
+/***************************/
+.rememberRow{
+    margin: 10px;
+}
+.checkbox {
+    position: relative;
+
+}
+
+input[type="checkbox"] {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+    margin-left: -20px;
+}
+.helper {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    user-select: none;
+    color: #e7e7e7;
+}
+.helper:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 22px;
+    height: 22px;
+    transition: transform 0.28s ease;
+    border-radius: 3px;
+    border: 2px solid #bf152f;
+}
+.helper:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid #bf152f;
+    border-left: 2px solid #bf152f;
+    -webkit-transform: rotate(-45deg) scale(0);
+    -moz-transform: rotate(-45deg) scale(0);
+    -ms-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+input[type="checkbox"]:checked ~ .helper::before {
+    color: #bf152f;
+}
+
+input[type="checkbox"]:checked ~ .helper::after {
+    -webkit-transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+    min-height: 24px;
+    padding-left: 35px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: sub;
+}
+input[type="checkbox"]:focus + label::before {
+    outline: #bf152f auto 5px;
+}
+
